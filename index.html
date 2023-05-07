@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Marker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/pexels-pixabay-207636.jpg">
+</head>
+
+<body>  
+    <section class="one py-5">
+        <div class="overlay"></div>
+        <div class="container">
+
+            <div class="w-100 m-auto  shadow  rounded-2 bg-transparent  text-white" >
+                <h1 class=" header text-center"> Book Marker</h1>
+                <hr>
+                <h2 class="text-center "> Book Mark your favorite sites</h2>
+    
+                <label for="sitename" class="my-2 ">Site Name </label>
+                <input id="sitename"  class="form-control mb-3" type="text" placeholder="Bookmark Name">
+    
+                <label for="siteurl" class="my-2">Site URL</label>
+                <input id="siteurl"  class="form-control mb-3" type="text" placeholder="Website URL">
+    
+                <button onclick="addData()" class="btn btn-secondary my-3 ">Submit</button>
+                <hr>
+            </div>
+            
+            <table class="table text-center text-white">
+                <thead class="text-white">
+                </thead>
+                <tbody id="demo" class="text-white">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
